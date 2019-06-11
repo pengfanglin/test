@@ -17,6 +17,12 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Main.start();
+        for(int i=0;i<10;i++){
+            final int finalI=i;
+            new Thread(() -> {
+                Main.start();
+            }).start();
+
+        }
     }
 }

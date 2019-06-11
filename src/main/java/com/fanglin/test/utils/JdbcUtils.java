@@ -16,7 +16,7 @@ public class JdbcUtils {
     private static Connection con;
 
     static {
-        String url = "jdbc:mysql://172.17.0.1:3306/es?useSSL=false";
+        String url = "jdbc:mysql://192.168.48.100:3306/es?useSSL=false";
         String username = "root";
         String password = "123456";
         try {
